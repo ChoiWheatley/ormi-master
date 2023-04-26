@@ -1,3 +1,6 @@
 [submodule "ormi-2023-04-26"]
 	path = ormi-2023-04-26
 	url = https://github.com/ChoiWheatley/ormi-2023-04-26
+[submodule "ormi-2023-04-25"]
+	path = ormi-2023-04-25
+	url = git@github.com:ChoiWheatley/ormi-2023-04-25.git
