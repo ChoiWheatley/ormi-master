@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/ormi-2023-04-27/006-css-selectors.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/ormi-2023-04-27/006-css-selectors.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/ormi-2023-04-27/007-combinators.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/ormi-2023-04-27/007-combinators.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/ormi-2023-04-27/008-css-pseudo-class-selector.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/ormi-2023-04-27/008-css-pseudo-class-selector.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/ormi-2023-04-27/009-css-structural-pseudo-class-selector.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/ormi-2023-04-27/009-css-structural-pseudo-class-selector.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/ormi-2023-04-27/011-css-box-model.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/ormi-2023-04-27/011-css-box-model.html"
+        }
+    ]
+}
