@@ -79,6 +79,10 @@ li > label {
   box-sizing: content-box;
 }
 
+.submit-button:hover {
+  cursor: pointer;
+}
+
 .submit-button:active {
   margin-top: 1rem;
   border: 0;
@@ -105,6 +109,10 @@ body {
 .header a {
   text-decoration: none;
   color: #111;
+}
+
+.header button[type="button"]:hover {
+  cursor: pointer;
 }
 
 .header-click a,
@@ -235,6 +243,10 @@ body {
 
   box-sizing: border-box;
   font: inherit;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .table.new-content textarea {
