@@ -1,5 +1,9 @@
 body,
-p {
+h1,
+h2,
+p,
+fieldset,
+ul {
   margin: 0;
   font-family: "KoPubDotum", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -99,7 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px;
   border-bottom: 1px solid gray;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
@@ -189,9 +193,6 @@ body {
 
 .table.new-content th {
   width: 10rem;
-}
-
-.table.new-content th {
   margin: 4px 0;
 }
 
