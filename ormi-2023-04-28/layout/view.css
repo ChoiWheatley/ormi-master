@@ -1,0 +1,38 @@
+.doc-title {
+  background-color: #eee;
+  padding: 5px 20px 20px 20px;
+  border-top: 3px solid;
+  border-bottom: 1px solid #ddd;
+}
+
+.doc-title h2 {
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
+
+.doc-body {
+  margin: 20px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+table.doc-meta {
+  width: 100%;
+}
+
+table.doc-meta tr {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+table.doc-meta td {
+  border-right: 1px solid #aaa;
+  padding: 0px 1rem;
+}
+
+table.doc-meta td:first-child {
+  padding: 0 1rem 0 0;
+}
+table.doc-meta td:last-child {
+  border: none;
+}
