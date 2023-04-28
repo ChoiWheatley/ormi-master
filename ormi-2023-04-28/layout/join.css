@@ -1,0 +1,46 @@
+.container {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.container [type="submit"] {
+  width: 100%;
+  height: 3rem;
+  background-color: royalblue;
+  border: 2px solid rgb(41, 67, 143);
+  border-radius: 0.3rem;
+  border-width: 1px 1px 3px;
+  color: white;
+  font-size: xx-large;
+  margin-top: 1rem;
+  box-sizing: content-box;
+}
+
+form label,
+form legend {
+  display: inline-block;
+  width: 7rem;
+}
+
+legend {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  float: left;
+}
+
+fieldset {
+  position: relative;
+  border: 0;
+  margin: 0;
+}
+
+fieldset ul {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+fieldset li {
+  display: inline-block;
+  width: fit-content;
+}
