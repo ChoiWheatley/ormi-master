@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout practice creating our own header!!!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="index.html">HTML/CSS 실습</a></h1>
+        <div class="header-click">
+            <a href="login.html">로그인</a>
+            <a href="join.html">회원가입</a>
+            <a href="chat.html">채팅</a>
+            <button type="button">로그아웃</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2 class="main-title">게시판</h2>
+        <p class="main-desc"><strong>2</strong> 개의 게시글이 있습니다.</p>
+        <table class="table list">
+            <colgroup>
+                <col style="width: 4rem">
+            </colgroup>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+            <tr>
+                <td colspan="5" class="nodata">등록된 게시물이 없어요 👻</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>
+                    <a href="view.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur
+                        quidem laborum vitae eius aliquid amet aliquam laboriosam, reprehenderit quis in quasi enim
+                        accusamus eos ea dignissimos dicta nostrum perferendis?</a>
+                </td>
+                <td>홍길동</td>
+                <td>2023.03.24</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>
+                    <a href="https://www.naver.com">위니브에서 수강생분들에게 알려드립니다</a>
+                </td>
+                <td>홍길동</td>
+                <td>2023.04.25</td>
+                <td>999</td>
+                </th>
+            <tr>
+                <th>1</th>
+                <td>
+                    <a href="view.html">이스트소프트 백엔드 개발 오르미 1기 모집</a>
+                </td>
+                <td>홍길동</td>
+                <td>2023.03.24</td>
+                <td>999</td>
+            </tr>
+        </table>
+
+        <div class="btn-group">
+            <a href="new.html" class="btn">글쓰기</a>
+        </div>
+
+        <p class="footer">Copyright 2023. All rights reserved.</p>
+</body>
+
+</html>

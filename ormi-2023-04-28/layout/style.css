@@ -1,0 +1,252 @@
+body,
+p {
+  margin: 0;
+  font-family: "KoPubDotum", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  color: rgb(114, 114, 114);
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+form > div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+form label,
+form legend {
+  display: inline-block;
+  width: 7rem;
+}
+
+form [type="text"],
+[type="email"],
+[type="password"] {
+  width: 100%;
+  height: 2.3rem;
+}
+
+fieldset {
+  position: relative;
+  border: 0;
+  margin: 0;
+}
+
+legend {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  padding: 0;
+  /* float: left; */
+}
+
+fieldset ul {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+fieldset li {
+  display: inline-block;
+  width: fit-content;
+}
+
+li > label {
+  width: initial;
+}
+
+.container [type="submit"] {
+  width: 100%;
+  height: 3rem;
+  background-color: royalblue;
+  border: 2px solid rgb(41, 67, 143);
+  border-radius: 0.3rem;
+  border-width: 1px 1px 3px;
+  color: white;
+  font-size: xx-large;
+  margin-top: 1rem;
+  box-sizing: content-box;
+}
+
+.submit-button:active {
+  margin-top: 1rem;
+  border: 0;
+}
+
+body {
+  /* max-width: 1500px; */
+  min-width: 700px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #111;
+}
+
+.header-click a,
+.header-click button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+.header-click button {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+.footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  margin-top: 80px;
+}
+
+.main {
+  flex-grow: 1;
+  max-width: 60rem;
+  width: 80%;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table.list {
+  text-align: center;
+}
+
+.table.list.number {
+  width: 3rem;
+}
+
+.table th {
+  background-color: #eee;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table td {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.table a {
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+
+  /* 말줄임 처리 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table td.nodata {
+  display: none;
+}
+
+.table.new-content th {
+  width: 10rem;
+}
+
+.table.new-content th {
+  margin: 4px 0;
+}
+
+.table-desc {
+  color: #555;
+  font-weight: bold;
+}
+
+.table.new-content #title {
+  width: 100%;
+  height: 2rem;
+  border-radius: 4px;
+  border-color: aqua;
+}
+
+/* main 내부 컨텐츠 */
+.main-title {
+  margin: 40px 0 10px;
+}
+
+.main-desc {
+  margin: 20px 0;
+}
+
+.main-desc strong {
+  color: royalblue;
+}
+
+.btn-group {
+  text-align: right;
+}
+
+.btn {
+  width: 80px;
+  height: 32px;
+
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  color: black;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 5px 0;
+
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.table.new-content textarea {
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.table.new-content select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 7rem;
+  height: 2rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>HTML/CSS 실습</h1>
+        <div class="header-click">
+            <a href="login.html">로그인</a>
+            <a href="join.html">회원가입</a>
+            <a href="chat.html">채팅</a>
+            <button type="button">로그아웃</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>글쓰기</h1>
+
+        <p class="table-desc">내용을 입력해 주세요</p>
+
+        <form action="#" method="post">
+            <table class="table new-content">
+                <tr>
+                    <th><label for="category">카테고리</label></th>
+                    <td>
+                        <select name="category" id="category">
+                            <option value="default">일반</option>
+                            <option value="question">질문</option>
+                            <option value="empathy">공감</option>
+                            <option value="talk">자유게시판</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="title">제목</label></th>
+                    <td><input type="text" id="title"></td>
+                </tr>
+                <tr>
+                    <th><label for="content">내용</label></th>
+                    <td><textarea name="content" id="content" cols="30" rows="10"></textarea> </td>
+                </tr>
+                <tr>
+                    <th><label for="file-attach">파일첨부</label></th>
+                    <td><input type="file" name="file-attach" id="file-attach"></td>
+                </tr>
+            </table>
+        </form>
+        <div>
+            <div class="btn-group">
+                <a class="btn" href="index.html">목록</a>
+                <input class="btn" type="reset" value="초기화">
+                <input class="btn" type="submit" value="작성">
+            </div>
+
+        </div>
+    </div>
+    <p class="footer">Copyright 2023. All rights reserved.</p>
+</body>
+
+</html>
