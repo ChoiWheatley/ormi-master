@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Basic Attributes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- https://tailwindcss.com/docs/margin -->
+    <!-- https://tailwindcss.com/docs/padding -->
+    <!-- https://tailwindcss.com/docs/font-weight -->
+    <!-- https://tailwindcss.com/docs/text-color -->
+    <div class="text-base">text-base</div>
+    <div class="text-lg">text-lg</div>
+    <div class="text-2xl">text-2xl</div>
+    <div class="text-5xl">text-5xl</div>
+
+    <div class="border border-gray-500">border no padding</div>
+    <div class="border border-gray-500 p-3">border padding 3</div>
+    <div class="border border-gray-500 mt-3">border margin top 3</div>
+    <div class="border border-gray-500 mt-3 pl-3">border margin top 3 and padding left 3</div>
+
+    <hr style="display: block; margin: 1rem;">
+
+    <div class="space-y-2"> space-y-2 below
+        <div class="border border-gray-500">border no padding</div>
+        <div class="border border-gray-500">border no padding</div>
+        <div class="border border-gray-500">border no padding</div>
+    </div>
+
+    <hr style="display: block; margin: 1rem;">
+
+    <div class="p-5">
+        <!-- https://tailwindcss.com/docs/list-style-type -->
+        초기화된 ul,li Tailwind로 리스트 만들기
+        <ul class="list-disc">
+            <li>hello</li>
+            <li>hello</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magni deleniti? Error repudiandae animi,
+                perferendis magni nulla obcaecati voluptatem vitae voluptates praesentium minima, expedita excepturi
+                voluptate sapiente accusantium perspiciatis pariatur!
+                Illo impedit quaerat quo ab quisquam dicta id optio illum ea fugit aperiam obcaecati, maiores nobis
+                quidem dolorum. Asperiores earum perferendis qui, fugiat consectetur sapiente eum quo dolore suscipit
+                ducimus?
+            </li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+
+        <div>
+            list-disc list-inside
+        </div>
+
+        <ul class="list-disc list-inside">
+            <li>hello</li>
+            <li>hello</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magni deleniti? Error repudiandae animi,
+                perferendis magni nulla obcaecati voluptatem vitae voluptates praesentium minima, expedita excepturi
+                voluptate sapiente accusantium perspiciatis pariatur!
+                Illo impedit quaerat quo ab quisquam dicta id optio illum ea fugit aperiam obcaecati, maiores nobis
+                quidem dolorum. Asperiores earum perferendis qui, fugiat consectetur sapiente eum quo dolore suscipit
+                ducimus?
+            </li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+
+        <ol class="list-decimal">
+            <li>hello</li>
+            <li>hello</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magni deleniti? Error repudiandae animi,
+                perferendis magni nulla obcaecati voluptatem vitae voluptates praesentium minima, expedita excepturi
+                voluptate sapiente accusantium perspiciatis pariatur!
+                Illo impedit quaerat quo ab quisquam dicta id optio illum ea fugit aperiam obcaecati, maiores nobis
+                quidem dolorum. Asperiores earum perferendis qui, fugiat consectetur sapiente eum quo dolore suscipit
+                ducimus?
+            </li>
+            <li>hello</li>
+            <li>hello</li>
+        </ol>
+    </div>
+
+
+    <div class="space-y-4">
+        <hr style="display: block; margin: 1rem;">
+
+        <div class="w-16 h-16 bg-red-200"></div>
+        <div class="w-16 h-16 bg-red-200 rounded"></div>
+        <div class="w-16 h-16 bg-red-200 rounded-2xl"></div>
+        <div class="w-16 h-16 bg-red-200 rounded-full"></div>
+
+
+        <hr style="display: block; margin: 1rem;">
+
+        <div class="border-l-4">border-l-4</div>
+        <div class="border-l-4 border-gray-500">border-l-4 border-gray-500</div>
+        <div class="border-l-4 border-gray-500">border-l-4 border-gray-500</div>
+        <div class="border-t-4 border-gray-500">border-t-4 border-gray-500</div>
+        <div class="border-b-4 border-gray-500">border-b-4 border-gray-500</div>
+        <div class="border-r-4 border-gray-500">border-r-4 border-gray-500</div>
+
+    </div>
+
+</body>
+
+</html>
