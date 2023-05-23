@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>types</title>
+</head>
+
+<body>
+    <script>
+        console.assert('number' === typeof (10));
+        console.assert('number' === typeof (10.1))
+        console.assert('string' === typeof ('hello'))
+        console.assert('boolean' === typeof (true))
+        console.assert('boolean' === typeof (false))
+
+        console.assert('object' === typeof ([]))
+        console.assert('object' === typeof ([1, 2, 3]))
+        console.assert('object' === typeof ({ 'one': 1, 'two': 2 }))
+        console.assert('object' === typeof (new Set('hello')))
+        console.assert('object' === typeof (new Map()))
+        console.assert('object' === typeof (/regex/g))
+
+        console.assert('function' === typeof (() => { }))
+
+        //////// + operator
+        console.assert('1010' === 10 + '10')
+        console.assert('1010' === '10' + 10)
+        console.assert('10true' === '10' + true)
+        console.assert('true10' === true + '10')
+
+        //////// type casting
+        console.assert(10 === parseInt('10'))
+        console.assert(true === Boolean('10'))
+        console.assert('10' === String(10))
+
+    </script>
+</body>
+
+</html>

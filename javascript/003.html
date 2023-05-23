@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console log</title>
+</head>
+
+<body>
+    <script>
+        console.log('hello, world');
+        let x = 'hello';
+        console.dir(x)
+
+        // `var` keyword allows variable shadowing
+        var y = 'world';
+        var y = 10;
+        var y = { 'hello': 'world' };
+
+        console.log(y)
+
+        // let x = 30; // already defined error
+
+        const z = {
+            'one': 1,
+            'two': 2,
+            'three': 3
+        };
+        console.table(z);
+
+        console.group('one')
+        console.log('호준/팀원')
+        console.log('정효/팀원')
+        console.log('성철/팀원')
+        console.group('two')
+        console.log('이도/팀원')
+        console.log('기현/팀원')
+        console.log('슬기/팀원')
+        console.groupEnd()
+        console.log('end')
+        console.groupEnd()
+        console.log('end')
+
+        // 콘솔 꾸미기
+        console.log("%c너의 컴퓨터는 해킹 당했다. 어서 트월킹을 추어라.", "color:red;font-size:50px;font-weight:bold")
+    </script>
+</body>
+
+</html>
