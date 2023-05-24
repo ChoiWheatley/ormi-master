@@ -56,3 +56,38 @@ log(Object.entries(user));
 // user.keys와 같은 메서드가 존재하지 않는다.
 // Object를 상속받는 곳이 너무 많기 때문이다.
 // `keys` 메서드가 존재하는 클래스는 바로 `Map`이다.
+
+const babaYaga = {
+  name: "John Wick",
+  age: 53,
+  from: "벨라루스",
+  askingHim: function () {
+    console.log("Yeah, I'm thinking I'm back!");
+  },
+  // 최신 문법을 사용하여 function을 등록할 수 있다.
+  sayHello() {
+    console.log("Hello, World!");
+  },
+};
+
+/// CRUD (Create, Read, Update, Delete)는 모든 서비스의 기본중에 기본
+// 1. 데이터 추가
+babaYaga.height = 250;
+babaYaga;
+// 2. 데이터 업데이트
+babaYaga.height = 0;
+babaYaga;
+// 전개구문을 활용한 복제
+const human2 = {
+  ...babaYaga,
+  age: 10,
+};
+human2;
+
+console.log(Object.keys(babaYaga));
+console.log(Object.values(babaYaga));
+console.log(Object.entries(babaYaga));
+
+// 3. Delete
+babaYaga.height = null;
+babaYaga;
