@@ -62,3 +62,15 @@ for (const i in [10, 20, 30]) {
 for (const key in { one: 1, two: 2 }) {
   console.log(key);
 }
+
+myObject = {
+  지역이름: "전국", // key : value(2개의 집합을 가리켜 객체 프로퍼티)
+  확진자수: 24889,
+  격리해제수: 23030,
+  사망자수: 438,
+  십만명당발생율: 48.0,
+};
+
+for (const k in myObject) {
+  console.log(`(${k}: ${myObject[k]})`);
+}
