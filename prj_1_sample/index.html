@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주여행계획</title>
+</head>
+
+<body>
+    <script>
+        let url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`;
+        let data = [{
+            "role": "system",
+            "content": "assistant는 소크라테스이다. 말투는 '요'로 끝낸다."
+        }];
+        // content 자리에 폼에서 가져온 내용을 넣는다.
+        data.push({
+            "role": "user",
+            "content": "제주 3박 4일 일정을 짜줘"
+        })
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+            redirect: "follow",
+        })
+            .then((res) => res.json())
+            .then((res) => console.log(res))
+    </script>
+</body>
+
+</html>
