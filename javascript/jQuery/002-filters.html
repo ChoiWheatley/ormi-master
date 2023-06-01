@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Filter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- filter 기본 -->
+    <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+    </ul>
+    <script>
+        // $("li").eq(0).css("color", "red"); // li의 0번째에 해당하는녀석
+        // $("li").eq(3).css("color", "red");
+        // $("li:eq(3)").css("color", "red");
+        // $("li:gt(6)").css("color", "blue"); // gt = greater than의 약자
+        // $("li:gt(6)").css("color", "blue");
+        // $("li:nth-child(2n)").css("color", "blue"); // css에서 쓰던 선택자의 모양 그대로!
+        // $("li:nth-child(3n)").css("color", "blue");
+        // $("li:odd").css("color", "blue"); // 홀수
+        // $("li:even").css("color", "blue"); // 짝수
+        // $("li:lt(5)").css("color", "blue"); // lt = less than의 약자
+    </script>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- css style attr filter -->
+    <input name="man-news" /><br />
+    <input name="milkman" /><br />
+    <input name="letterman2" /><br />
+    <input name="newmilk" /><br />
+    <script>
+        $("input[name*='man']").val("has man in it!");
+    </script>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- 이건 뭐지 -->
+    <p>hello hi</p>
+    <p>hello !!</p>
+    <p>hello world</p>
+    <p>hello</p>
+    <p>hello world</p>
+
+    <div>
+        <label>
+            <input type="radio" name="newsletter" value="Hot Fuzz" />
+            <span>name?</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="newsletter" value="Cold Fusion" />
+            <span>value?</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="newsletter" value="Evil Plans" />
+            <span>value?</span>
+        </label>
+    </div>
+
+    <ul>
+        <li>Does the UL contain an LI?</li>
+    </ul>
+    <ul>
+        hello world
+    </ul>
+
+    <style>
+        .full {
+            border: 1px solid red;
+        }
+    </style>
+
+    <script>
+        $("input[value='Hot Fuzz']").next().text("Hot Fuzz");
+
+        console.log($("p:contains(world)"));
+
+        $("p:contains(world)").css("color", "red");
+
+        // 자주사용
+        $("ul").has("li").addClass("full");
+    </script>
+
+
+    <hr>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- css style attr filter -->
+    <input id="one" type="text" />
+    <input id="two" type="text" />
+    <p id="three">hello</p>
+    <button id="four">클릭해!</button>
+    <script>
+        // 자주 사용
+
+        // 버튼을 클릭하면
+        $("#four").click(function () {
+            //#one에 입력된 값을 가져와 value에 넣고
+            let value = $("#one").val();
+
+            //#one에 아무것도 없는 값으로 바꾸고(주석처리하고 버튼눌러보면 원래 입력한 값이 그대로 남아있습니다.)
+            $("#one").val("");
+
+            //#one에 입력했던 값을 two와 three에 넣는데 input창이 아닌 곳에는 val이 아니라 text로 써야 합니다.
+            $("#two").val(value);
+            $("#three").text(value);
+        });
+    </script>
+</body>
+
+</html>

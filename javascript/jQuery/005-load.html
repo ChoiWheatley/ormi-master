@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // 근데 할거면 그냥 fetch 쓰지 왜 있냐? ==> 이게 처음 나올 당시에는 fetch가 없었거든
+        $.ajax({
+            url: "http://test.api.weniv.co.kr/mall",
+            async: true, // false로 변경해보세요!
+            // 기본이 true(비동기처리), false를 할 경우 동기처리
+            // false를 하게 되면 해당 코드를 다 실행한 다음 뒤에 코드를 실행합니다.
+            // true이면 통신이 다 완료되지 않아도 일단 뒤에 코드를 실행합니다.
+            success: function (result) {
+                // $("#data").text(result);
+                for (const i of result) {
+                    console.log(i)
+                    el = document.createElement('div');
+                    el.innerHTML = i.productName
+                    document.body.append(el)
+                }
+            },
+        });
+        console.log("hello");
+    </script>
+</body>
+
+</html>

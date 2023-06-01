@@ -6,10 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <h1>hello H1</h1>
+    <p>hello! P</p>
+    <main>
+        <section>
+            <h2>main>section>Hello H2</h2>
+            <p class="main-cont">main>section>p.main-cont!!</p>
+
+            <!-- val, text 차이 알아둬 -->
+        </section>
+    </main>
+    <hr>
+    <h1>hello h1</h1>
+    <p>hello p</p>
+    <script>
+        // jQuery의 정체는?
+        function $(value) {
+            el = document.querySelectorAll(value)
+            return el
+        }
+    </script>
 </body>
 
 </html>
